@@ -14,3 +14,9 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/{id}',[UsersController::class,'show']);
+
+//chart vieu
+
+Route::get('/chart', function () {
+    return view('chart');
+    });
